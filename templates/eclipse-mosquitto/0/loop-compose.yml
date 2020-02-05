@@ -1,0 +1,17 @@
+.catalog:
+  name: eclipse-mosquitto
+  version: latest
+  uuid: mosquitto-0
+  questions:
+  - variable: MOSQUITTO_PORT
+    description: 'Mosquitto exposed port'
+    label: 'Port:'
+    required: true
+    default: 1883
+    type: int
+  - variable: RESTART
+    description: 'Application restart option: no, always, on-failure'
+    label: 'Restart:'
+    required: true
+    default: "always"
+    type: string

@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    ports:
+      - "${MOSQUITTO_PORT}:1883"
+    volumes:
+      - mosquitto-vol:/data/db
+    network_mode: bridge
+    restart: "${RESTART}"
+
+volumes:
+  mosquitto-vol:
+    driver: local
