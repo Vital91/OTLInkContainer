@@ -1,0 +1,6 @@
+name: Minifi
+description: Dataflow management
+
+category: Utils
+
+version: 0.5.0

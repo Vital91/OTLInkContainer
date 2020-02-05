@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  mosquitto:
+    image: apache/nifi-minifi:latest
+    ports:
+      - "${MINIFI_PORT}:8080"
+    volumes:
+      - mosquitto-vol:/data/db
+    network_mode: bridge
+    restart: "${RESTART}"
+
+volumes:
+  mosquitto-vol:
+    driver: local
