@@ -1,7 +1,7 @@
-# Mosquitto
+# Minifi
 
-This template creates a Mosquitto MQTT Broker.
+This template creates a Minifi
 
 ## Usage
 
-Choose the MQTT port you want to expose (in order to connect from remote locations).
+Choose the Minifiport you want to expose (in order to connect from remote locations).
