@@ -1,6 +1,6 @@
 .catalog:
   name: grafana
-  version: v5.1.0
+  version: 5.1.0
   uuid: Grafana-0
   questions:
   - variable: GRAFANA_PORT

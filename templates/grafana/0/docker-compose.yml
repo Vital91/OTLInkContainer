@@ -2,7 +2,7 @@ version: "2"
 
 services:
   minifi:
-    image: grafana/grafana:v5.1.0
+    image: grafana/grafana:5.1.0
     ports:
       - "${GRAFANA_PORT}:3000"
     volumes:
