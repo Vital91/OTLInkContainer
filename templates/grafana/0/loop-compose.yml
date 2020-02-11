@@ -1,0 +1,17 @@
+.catalog:
+  name: minifi
+  version: latest
+  uuid: Minifi-0
+  questions:
+  - variable: MINIFI_PORT
+    description: 'Minifi exposed port'
+    label: 'Port:'
+    required: true
+    default: 2000
+    type: int
+  - variable: RESTART
+    description: 'Application restart option: no, always, on-failure'
+    label: 'Restart:'
+    required: true
+    default: "always"
+    type: string

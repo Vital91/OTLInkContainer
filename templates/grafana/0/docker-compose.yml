@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  minifi:
+    image: apache/nifi-minifi:latest
+    ports:
+      - "${MINIFI_PORT}:2000"
+    volumes:
+      - minifi-vol:/data/db
+    network_mode: bridge
+    restart: "${RESTART}"
+
+volumes:
+  minifi-vol:
+    driver: local
