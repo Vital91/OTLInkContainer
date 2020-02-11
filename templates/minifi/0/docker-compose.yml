@@ -7,7 +7,7 @@ services:
       - "${MINIFI_PORT}:2000"
     volumes:
       - minifi-vol:/data/db
-    network_mode: bridge
+    network_mode: host
     restart: "${RESTART}"
 
 volumes:
