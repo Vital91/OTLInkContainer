@@ -1,7 +1,7 @@
-# Minifi
+# Grafana
 
-This template creates a Minifi
+This template creates a Grafana reporting platform
 
 ## Usage
 
-Choose the Minifiport you want to expose (in order to connect from remote locations).
+Choose the Grafana you want to expose (in order to connect from remote locations).

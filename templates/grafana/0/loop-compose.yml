@@ -1,13 +1,13 @@
 .catalog:
-  name: minifi
-  version: latest
-  uuid: Minifi-0
+  name: grafana
+  version: v5.1.0
+  uuid: Grafana-0
   questions:
-  - variable: MINIFI_PORT
-    description: 'Minifi exposed port'
+  - variable: GRAFANA_PORT
+    description: 'Grafana exposed port'
     label: 'Port:'
     required: true
-    default: 2000
+    default: 3000
     type: int
   - variable: RESTART
     description: 'Application restart option: no, always, on-failure'

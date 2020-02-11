@@ -2,14 +2,14 @@ version: "2"
 
 services:
   minifi:
-    image: apache/nifi-minifi:latest
+    image: grafana/grafana:v5.1.0
     ports:
-      - "${MINIFI_PORT}:2000"
+      - "${GRAFANA_PORT}:3000"
     volumes:
-      - minifi-vol:/data/db
-    network_mode: bridge
+      - grafana-vol:/data/db
+    network_mode: host
     restart: "${RESTART}"
 
 volumes:
-  minifi-vol:
+  grafana-vol:
     driver: local
