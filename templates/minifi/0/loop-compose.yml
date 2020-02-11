@@ -7,7 +7,7 @@
     description: 'Minifi exposed port'
     label: 'Port:'
     required: true
-    default: 8080
+    default: 2000
     type: int
   - variable: RESTART
     description: 'Application restart option: no, always, on-failure'
