@@ -7,7 +7,7 @@ services:
       - "${GRAFANA_PORT}:3000"
     volumes:
       - grafana-vol:/data/db
-    network_mode: host
+    network_mode: bridge
     restart: "${RESTART}"
 
 volumes:
