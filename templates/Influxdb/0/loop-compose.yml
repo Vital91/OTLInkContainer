@@ -1,0 +1,17 @@
+.catalog:
+  name: influxdb
+  version: latest
+  uuid: InfluxDB-0
+  questions:
+  - variable: INFLUXDB_PORT
+    description: 'InfluxDB exposed port'
+    label: 'Port:'
+    required: true
+    default: 8086
+    type: int
+  - variable: RESTART
+    description: 'Application restart option: no, always, on-failure'
+    label: 'Restart:'
+    required: true
+    default: "always"
+    type: string

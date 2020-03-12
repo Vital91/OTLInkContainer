@@ -1,0 +1,6 @@
+name: InfluxDB
+description: Time Series DB
+
+category: Utils
+
+version: 1.7

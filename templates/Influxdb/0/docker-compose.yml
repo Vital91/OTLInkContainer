@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  influxDB:
+    image: library/influxdb:latest
+    ports:
+      - "${INFLUXDB_PORT}:8086"
+    volumes:
+      - influxdb-vol:/data/db
+    network_mode: host
+    restart: "${RESTART}"
+
+volumes:
+  influxdb-vol:
+    driver: local
