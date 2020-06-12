@@ -1,12 +1,15 @@
-version: "0"
+version: "1"
 
 services:
   itm:
     image: vitalg/influx_to_mlflow:v1.2
+    ports:
+      - "${ITM_PORT}:3000"
     volumes:
       - itm-vol:/data/db
     network_mode: bridge
     restart: "${RESTART}"
+
 volumes:
   itm-vol:
     driver: local
