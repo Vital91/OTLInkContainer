@@ -1,0 +1,17 @@
+.catalog:
+  name: influx_to_mlflow
+  version: latest
+  uuid: itm-0
+  questions:
+  - variable: ITM_PORT
+    description: 'ITM exposed port'
+    label: 'Port:'
+    required: true
+    default: 5000
+    type: int
+  - variable: RESTART
+    description: 'Application restart option: no, always, on-failure'
+    label: 'Restart:'
+    required: true
+    default: "always"
+    type: string

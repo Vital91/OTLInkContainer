@@ -1,0 +1,6 @@
+name: Influx_to_mlflow
+description: Call MLFlow model using InfluxDB data source
+
+category: Utils
+
+version: v1.2
