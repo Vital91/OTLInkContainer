@@ -1,4 +1,4 @@
-version: "1"
+version: "0"
 
 services:
   itm:
@@ -7,7 +7,6 @@ services:
       - itm-vol:/data/db
     network_mode: bridge
     restart: "${RESTART}"
-
 volumes:
   itm-vol:
     driver: local
