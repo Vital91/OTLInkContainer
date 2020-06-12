@@ -1,4 +1,4 @@
-# InfluxDB To MLFlow
+# Grafana
 
 This template install Influx to MLFlow integration script
 ## Usage
