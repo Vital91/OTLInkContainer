@@ -3,13 +3,7 @@
   version: latest
   uuid: itm-0
   questions:
-  - variable: ITM_PORT
-    description: 'ITM exposed port'
-    label: 'Port:'
-    required: true
-    default: 5000
-    type: int
-  - variable: RESTART
+ - variable: RESTART
     description: 'Application restart option: no, always, on-failure'
     label: 'Restart:'
     required: true
