@@ -2,7 +2,7 @@ version: "2"
 
 services:
   grafana:
-    image: grafana/grafana:6.6.2
+    image: grafana/grafana:v7.0.0-beta3
     ports:
       - "${GRAFANA_PORT}:3000"
     volumes:
